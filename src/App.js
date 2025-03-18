@@ -3,12 +3,14 @@ import './App.css';
 import Message from './components/Message';
 import CurrentTime from './components/CurrentTime';
 import EventCard from './components/EventCard';
+import Timer from './components/timer';
 
 function App() {
   return (
     <div>
       <Message name="Москва"/>
       <CurrentTime />
+      <Timer />
 
       <div>
         <EventCard title="Группа 1" date="01 марта 2025 года, 16:20" location="Москва"/>
