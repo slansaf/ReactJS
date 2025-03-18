@@ -1,0 +1,9 @@
+.eventCard {
+  border: 1px solid #c73535;
+  width: 600px;
+  margin: 10px auto;
+  padding-left: 10px;
+}
+.eventCard__title, .eventCard__date, .eventCard__location {
+  color: rgb(30, 56, 92);
+}/*# sourceMappingURL=EventCard.css.map */
