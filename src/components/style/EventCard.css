@@ -4,6 +4,15 @@
   margin: 10px auto;
   padding-left: 10px;
 }
-.eventCard__title, .eventCard__date, .eventCard__location {
-  color: rgb(30, 56, 92);
+.eventCard__title, .eventCard__description, .eventCard__date {
+  color: blue;
+}
+
+.comment {
+  font-size: 20px;
+  border: 1px solid #c73535;
+  width: 600px;
+  margin: 10px auto;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=EventCard.css.map */

@@ -1,1 +1,1 @@
-{"version":3,"sources":["EventCard.sass","EventCard.css"],"names":[],"mappings":"AAAA;EACI,yBAAA;EACA,YAAA;EACA,iBAAA;EACA,kBAAA;ACCJ;ADAI;EACI,WAAA;ACER","file":"EventCard.css"}
+{"version":3,"sources":["EventCard.sass","EventCard.css"],"names":[],"mappings":"AAAA;EACI,yBAAA;EACA,YAAA;EACA,iBAAA;EACA,kBAAA;ACCJ;ADAI;EACI,WAAA;ACER;;ADAA;EACI,eAAA;ACGJ","file":"EventCard.css"}
