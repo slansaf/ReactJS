@@ -1,48 +1,47 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+
+// import Message from './components/Message';
+// import CurrentTime from './components/CurrentTime';
+// import EventCard from './components/EventCard';
+// import Timer from './components/timer';
+// import CommentsList from './components/CommentsList';
+// import Counter from './components/Counter';
+// import TodoList from './components/TodoList';
+// import ThemeSwitcher from './components/ThemeSwitcher';
+// import TemperatureConverter from './components/TemperatureConverter';
+// import BorderComp from './components/BorderComp';
+import './components/style/EventCard.css';
 import './App.css';
-import Message from './components/Message';
-import CurrentTime from './components/CurrentTime';
-import EventCard from './components/EventCard';
-import Timer from './components/timer';
-import CommentsList from './components/CommentsList';
-import Counter from './components/Counter';
-import TodoList from './components/TodoList';
-import ThemeSwitcher from './components/ThemeSwitcher';
-import TemperatureConverter from './components/TemperatureConverter';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-function App() {
-  return (
-    <div>
-      <Message name="Москва"/>
-      <CurrentTime />
-      <Timer />
-      <div>
-        <Counter />
-      </div>
-        <div>
-          <ThemeSwitcher />
-        </div>
+import ArticleList from './components/ArticleList';
+import ArticleDetail from './components/ArticleDetail';
+import Home from './components/Home';
+import About from './components/About';
+import React from 'react';
+import Navigation from './components/Navigation';
 
-      <div>
-        <EventCard title="Группа 1" date="01 марта 2025 года, 16:20" location="Москва"/>
-        <EventCard title="Группа 2" date="10 марта 2025 года, 15:40" location="Нижний Новгород"/>
-        <EventCard title="Группа 3" date="19 марта 2025 года, 20:10" location="Казань" propsBoolean="false"/>
-      </div>
+const articles = [
+  { id: 1, title: 'Статья 1', content: 'Содержимое статьи' },
+  { id: 2, title: 'Статья 2', content: 'Содержимое статьи' },
+  { id: 3, title: 'Статья 3', content: 'Содержимое статьи' },
+];
 
-      <div>
-        <CommentsList />
-      </div>
 
-    
-      <div>
-        <TodoList />
-      </div>
+const App = () => (
 
-      <div>
-        <TemperatureConverter />
-      </div>
+  <Router>
+    <div className="eventCard">
+      <Navigation />
+
+      <Routes>
+        <Route path='/' element={<Home /> } />
+        <Route path='/about' element={<About /> } />
+        
+      </Routes>
     </div>
-  );
-}
+  </Router>
+
+);
 
 export default App;
