@@ -12,3 +12,13 @@
 .comment {
   font-size: 50px;
 }
+
+.app.light {
+  color: black;
+  background-color: white;
+}
+
+.app.dark {
+  color: white;
+  background-color: black;
+}
